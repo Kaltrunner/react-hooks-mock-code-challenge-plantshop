@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 function NewPlantForm() {
+const[] = useState({
+  name: "",
+  description: "",
+  price: 0
+})
+
+// function onSubmit(e) {
+//   e.preventDefault();
+//   fetch(plantUrl, {
+//     method: "POST",
+//     headers: {
+// "Content-Type" : "application/json"
+// }, 
+// body: JSON.stringify({
+// })
+
+// function handleClick(e) {
+//   plants({...plant, [e.target.name] : e.target.value})
+// }
+
+  // });
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>

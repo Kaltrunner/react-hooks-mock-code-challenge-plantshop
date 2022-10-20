@@ -24,8 +24,8 @@ button {
 }
 
 button.primary {
-  background-color: var(--green);
-  color: white;
+  background-color: var(black);
+  color: green;
 }
 
 .app {
@@ -107,11 +107,18 @@ input:focus {
 
 .card img {
   width: 100%;
+  border-radius: 4px;
+  box-shadow: 6px 6px 4px darkgray;
 }
 
 .card button {
   margin-top: 0.5rem;
+  box-shadow: 2px 2px 2px black;
+  opacity: 0.4;
+  transition: 0.3s;
 }
+.card button:hover {opacity: 1}
+
 
 @media (min-width: 768px) {
   .cards {
